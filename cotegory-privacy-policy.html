@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2>Data Collection and Usage</h2>
+    <p>
+      This Chrome extension stores specific user data for feature functionality:
+    </p>
+    <ol>
+      <li>
+        <strong>GitHub Personal Access Token (Optional)</strong>
+        <ul>
+          <li>
+            This token is stored in the user's local storage
+            (<code>chrome.storage.local</code>) or chrome extension cloud
+            storage (<code>chrome.storage.sync</code>) for increasing UX
+          </li>
+          <li>
+            It is <strong>never transmitted to external servers</strong> or
+            shared with third parties, including the extension developer.
+          </li>
+          <li>
+            The only permission required for the GitHub token in this extension
+            is repository metadata(only require name, url of repositories).
+          </li>
+          <li>
+            To prevent granting access to all repository source code or
+            unnecessary token permissions, we have provided GitHub token
+            issuance guidelines within the extension.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong
+          >Categorized Data (Repositories, Projects, Organizations)</strong
+        >
+        <ul>
+          <li>
+            Stored locally in the user's browser
+            (<code>chrome.storage.local</code>) or chrome extension cloud
+            storage (<code>chrome.storage.sync</code>).
+          </li>
+          <li>
+            Used only to provide the categorization and quick navigation
+            features.
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <h3>User Control</h3>
+    <ul>
+      <li>
+        Users can view, update, or delete their stored data at any time through
+        the extension's settings menu in the extension popup.
+      </li>
+      <li>
+        If you have any concerns, contact me at
+        <a href="mailto:cocorlawnghks@gmail.com">cocorlawnghks@gmail.com</a>.
+      </li>
+    </ul>
+  </body>
+</html>
